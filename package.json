@@ -1,0 +1,15 @@
+{
+  "name": "teh-hot-code-push-type",
+  "version": "1.0.0",
+  "description": "type definition for teh hot code push",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:amosbaby/teh-hot-code-push-type.git"
+  },
+  "author": "amos lee",
+  "license": "ISC"
+}
