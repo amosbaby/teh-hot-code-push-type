@@ -1,6 +1,6 @@
 {
   "name": "teh-hot-code-push-type",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "type definition for teh hot code push",
   "main": "index.js",
   "scripts": {
