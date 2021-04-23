@@ -79,7 +79,20 @@ var HotCodePush = /** @class */ (function(_super) {
     })()
   }
   HotCodePush.prototype.installUpdate = function(options) {
-    return cordova(this, "installUpdate", { callbackStyle: "node" }, arguments)
+    var _this = this
+    return (function() {
+      if (checkAvailability(_this) === true) {
+        return new Promise(function(resolve, reject) {
+          HotCodePush.getPlugin().installUpdate(function(error, data) {
+            if (error) {
+              reject(error)
+            } else {
+              resolve(data)
+            }
+          }, options)
+        })
+      }
+    })()
   }
   HotCodePush.prototype.isUpdateAvailableForInstallation = function() {
     return cordova(
